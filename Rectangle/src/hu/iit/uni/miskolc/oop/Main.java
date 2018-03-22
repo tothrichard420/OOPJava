@@ -1,5 +1,7 @@
 package hu.iit.uni.miskolc.oop;
 
+import java.awt.SecondaryLoop;
+
 public class Main {
 	public static void main(String[] args){
 		Rectangle firstRectangle = new Rectangle(86,42);
@@ -13,6 +15,19 @@ public class Main {
 		System.out.println("1." + firstRectangle);
 		System.out.println("2." + secundRectangle);
 		System.out.println("3." + thirdRectangle);
+		firstRectangle.setBoth(5,10);
+		secundRectangle.setBoth(5,10);
+		if(firstRectangle.equals(secundRectangle)){
+			System.out.println("Egyezik a kettõ.");
+		}
+		else {
+			System.out.println("Nem egyezik a kettõ");
+		}
+		if (firstRectangle.equals(thirdRectangle)) {
+			System.out.println("Egyezik a kettõ.");
+		} else {
+			System.out.println("Nem egyezik a kettõ.");
+		}
 	}
 }
  
