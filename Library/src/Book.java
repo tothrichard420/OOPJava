@@ -3,6 +3,8 @@ public class Book {
 	private String author;
 	private Integer releaseYear;
 	private int price;
+	
+	
 	public String getTitle() {
 		return title;
 	}
